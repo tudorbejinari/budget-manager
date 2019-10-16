@@ -2,7 +2,7 @@
 // VARIABLES
 // ======================
 
-// 1st: pull initial budgetItems/lastId from localStorage to set initial values
+// 1st: pull initial budgetItems/lastID from localStorage to set initial variables
 
 
 
@@ -10,10 +10,12 @@
 // FUNCTIONS
 // ======================
 
-// 4th: update localStorage with latest budgetItems and latest lastID
+// 4th: function to update localStorage with latest budgetItems and latest lastID
 
 
-// 5th: render budgetItems on table
+// 5th: function to render budgetItems on table; each item should be rendered in this format:
+// <tr data-id="2"><td>Oct 14, 2019 5:08 PM</td><td>November Rent</td><td>Rent/Mortgage</td><td>1300</td><td>Fill out lease renewal form!</td><td class="delete"><span>x</span></td></tr>
+// also, update total amount spent on page (based on selected category):
 
 
 
@@ -24,15 +26,17 @@
 // 2nd: wire up click event on 'Enter New Budget Item' button to toggle display of form
 
 
-// 3rd: on click of 'Add Budget Item' button, gather user input and add newest item to budgetItems array
-// each budget item should include: id / date / name / category / amount / notes
-// (also, trigger localStorage update and trigger budgetItems rerender, once created)
+// 3rd: wire up click event on 'Add Budget Item' button, gather user input and add item to budgetItems array
+// (each item's object should include: id / date / name / category / amount / notes)... then clear the form
+// fields and trigger localStorage update/budgetItems rerender functions, once created
 
 
-// 6th: on change of the category dropdown, show filtered budgetItems and total
+// 6th: wire up change event on the category select menu, show filtered budgetItems based on selection
 
 
-// 7th: on click of the delete button on a given row, delete that budgetItem
+// 7th: wire up click event on the delete button of a given row; on click delete that budgetItem
+
+
 
 
 
