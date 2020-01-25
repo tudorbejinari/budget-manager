@@ -3,7 +3,7 @@
 // ======================
 
 // 1st: pull initial budgetItems/lastID from localStorage to set initial variables
-const budgetItems = JSON.parse(localStorage.getItem('budgetItems')) || [];
+let budgetItems = JSON.parse(localStorage.getItem('budgetItems')) || [];
 let lastID = parseInt(localStorage.getItem('lastId')) || 0;
 
 // ======================
@@ -104,8 +104,13 @@ $('#categoryFilter').on('change', function() {
 });
 
 // 7th: wire up click event on the delete button of a given row; on click delete that budgetItem
-$("#budgetItems").on('click','.delete span' ,function() {
-  const id = $(this)
+$('#budgetItems').on('click', '.delete span', function() {
+  const id = parseInt($(this)
     .parents('tr')
-    .data('id');
+    .data('id'));
+  const remainingItems = budgetItems.filter(item => item.id !== id);
+  budgetItems = remainingItems;
+  updateStorage();
+  renderItems();
+  $("#categoryFilter").val("")
 });
