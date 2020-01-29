@@ -1,4 +1,4 @@
-# JavaScript/jQuery Budget Manager
+# JavaScript/jQuery [Budget Manager](https://tudorbejinari.github.io/budget-manager/)
 
 Starter code for DU Coding Boot Camp JavaScript/jQuery Review Session.
 
