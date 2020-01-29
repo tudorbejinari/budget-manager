@@ -1,13 +1,13 @@
-# JavaScript/jQuery Budget Manager
+# JavaScript/jQuery [Budget Manager](https://tudorbejinari.github.io/budget-manager/)
+## Tools Used: 
+* Html
+* CSS
+* Bootstrap
+* JavaScript
+* jQuery
 
-Starter code for DU Coding Boot Camp JavaScript/jQuery Review Session.
+## What I learned:
 
-## Getting Started
+I experinced with JavaScript and Jquery to add functionality to create new budget items, render budget items, sort by category, show total amount spent, delete budget items, etc. This app uses localStorage for data persistence.
 
-Begin by forking and cloning this repository.
 
-During the session, we'll be working together to add functionality to create new budget items, render budget items, sort by category, show total amount spent, delete budget items, etc. This app will use localStorage for data persistence.
-
-## Author
-
-* **Sarah Cullen** - *Initial HTML/CSS*
